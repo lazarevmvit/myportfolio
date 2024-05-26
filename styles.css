@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(to bottom, #ebe3d8, #90754a);
+    color: #333;
+}
+
+header {
+    background-color: transparent;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu {
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0; /* Фиксируем меню вверху */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    background-color: rgba(235, 227, 216, 0.9);
+   /* background-color: linear-gradient(to bottom, #90754a, #ebe3d8); /* Пример цвета фона */
+    z-index: 1000; /* Чтобы меню было поверх других элементов */
+    transition: background-color 0.3s;
+    padding-top: 10px; /* Уменьшил верхний паддинг */
+    padding-bottom: 5px; /* Уменьшил нижний паддинг */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 5px;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: gold;
+}
+
+main {
+    padding-top: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center; /* Выравнивание по центру */
+}
+
+/* footer {
+    background: linear-gradient(to bottom, #f3f3f3, #e6e6e6);
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    color: #333;
+} */
+
+
+footer {
+    background: linear-gradient(to bottom, #90754a, #ac8b57); /* Ваш новый градиент */
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    color: #333;
+}
+
+
+footer p {
+    margin: 0;
+}
+
+.portfolio-section {
+    text-align: center;
+}
+
+.portfolio-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.text-block {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.text-blockq {
+    flex: 1;
+    margin-right: 2px;
+    letter-spacing: 0.1em; /* Измените значение по вашему усмотрению */
+}
+
+.image-block {
+    flex: 1;
+    
+}
+
+.image-block img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/*h1 {
+    font-family: 'Georgia', serif;
+    color: rgb(151, 98, 0);
+}*/
+
+h1 {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(90deg, rgba(151, 98, 0, 1) 0%, rgb(255, 224, 99) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.gradient-text {
+    background: linear-gradient(90deg, rgba(151, 98, 0, 1) 0%, rgb(197, 159, 8) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button {
+    background: linear-gradient(to bottom, gold, darkgoldenrod);
+    color: #ffffff;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 800px;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, darkgoldenrod, gold);
+}
+
+.copywriting-description {
+    text-align: center; /* Выравнивает текст по центру */
+    max-width: 60%; /* Ограничивает ширину текста */
+    margin: 20px auto; /* Центрирует элемент */
+    font-family: 'Allura', cursive; /* Применяет шрифт Allura */
+}
+
+/* Стили для ссылки */
+.quick-link {
+    margin-top: 20px; /* Отступ сверху, вы можете настроить его по своему усмотрению */
+    text-align: center; /* Центрирование текста */
+}
+
+.quick-link-text {
+    color: #007BFF; /* Цвет текста ссылки */
+    text-decoration: none; /* Убирает подчеркивание */
+    font-weight: bold; /* Делает текст жирным */
+}
+
+.quick-link-text:hover {
+    text-decoration: underline; /* Подчеркивает текст при наведении */
+}
+
+
+
+/* Стили для раздела отзывов */
+.reviews {
+    display: flex;
+    flex-direction: column; /* Располагаем отзывы по вертикали */
+    gap: 20px; /* Отступ между отзывами */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.review {
+    border: 1px solid #ccc; /* Граница вокруг отзыва */
+    padding: 15px; /* Отступы внутри отзыва */
+    border-radius: 8px; /* Закругление углов */
+    background-color: #f9f9f9; /* Цвет фона */
+    display: flex; /* Используем флекс-контейнер */
+    flex-direction: column; /* Внутри отзыва элементы располагаются вертикально */
+}
+
+.review blockquote {
+    margin: 0; /* Убираем стандартные отступы в элементе blockquote */
+    padding: 0;
+}
+
+.review footerz {
+    margin-top: 10px; /* Отступ сверху от текста отзыва */
+    font-style: italic; /* Курсив для имени автора */
+    text-align: right; /* Выравниваем имя автора отзыва справа */
+    color: #555; /* Цвет текста имени автора */
+}
