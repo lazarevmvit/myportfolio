@@ -206,3 +206,21 @@ button:hover {
     text-align: right; /* Выравниваем имя автора отзыва справа */
     color: #555; /* Цвет текста имени автора */
 }
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        padding: 0 10px;
+    }
+}
